@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Assignment 3 - Web-Based VR</title>
+        <meta charset="utf-8">
+        <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+        <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+        <script src="https://d3js.org/d3.v3.min.js"></script>
+    
+        <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body style='margin: 0px; overflow: hidden;'>
+    <video class="input_video" style="display:none;"></video>
+  <canvas class="output_canvas" width="1280" height="720" style="display:none;"></canvas>
+
+    <a-scene embedded>
+          <a-entity id="helloworld" rotation="0 0 0" position="-0.01 -0.0 -0.0" scale="0.2 0.2 0.2">
+          </a-entity>
+
+         <a-box id="myBox" width="0.3" height="0.3" depth="0.3" color="red"></a-box>
+  <a-entity camera></a-entity>
+    </a-scene>
+
+    
+    <script src="main.js"></script>
+</html>
