@@ -1,7 +1,7 @@
 // https://mediapipe.readthedocs.io/en/latest/solutions/hands.html
 // https://gamedev.stackexchange.com/questions/122382/how-to-calculate-a-simple-swivel-rotation-no-physics-engine
 var chart = d3.select("#chart");
-
+console.log("OK");
 // Reads data from csv. Data is unemployment through 2024 - 2025.
 // Data is from https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/jobsandvacanciesintheuk/february2026
 d3.csv("./data.csv", function(data) {
